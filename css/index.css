@@ -1,0 +1,115 @@
+html {
+  font-size: 62.5%;
+}
+h1,
+h2 {
+  font-family: 'Shadows Into Light', cursive;
+}
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Tajawal', sans-serif;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+h4 {
+  font-size: 1.6rem;
+}
+.container-nav {
+  border-bottom: 2px dashed #A9A9A9;
+}
+.navigation {
+  margin-left: 22%;
+  margin-right: 22%;
+}
+@media (max-width: 780px) {
+  .navigation {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+}
+@media (max-width: 550px) {
+  .navigation {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+}
+.navigation #title {
+  float: left;
+}
+@media (max-width: 780px) {
+  .navigation #title {
+    display: flex;
+    min-width: 100%;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 550px) {
+  .navigation #title {
+    display: flex;
+    min-width: 100%;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+}
+.navigation .navbar {
+  display: flex;
+  justify-content: flex-end;
+  margin: 2rem;
+  margin-top: 3rem;
+}
+@media (max-width: 780px) {
+  .navigation .navbar {
+    width: 100%;
+    margin: 0;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 550px) {
+  .navigation .navbar {
+    width: 100%;
+    margin: 0;
+    justify-content: space-around;
+  }
+}
+.navigation .navbar a {
+  text-decoration: none;
+  background-color: orchid;
+  border: 0.3rem solid #A9A9A9;
+  border-radius: 1.5rem;
+  margin-bottom: 2rem;
+  color: black;
+  font-size: 2rem;
+  padding: 1rem;
+}
+.navigation .navbar a a:hover {
+  background-color: #E6E6FA;
+}
+.footer {
+  width: 100%;
+  border-top: 2px dashed silver;
+  background: #1E90FF;
+}
+.footer p {
+  color: black;
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 20px;
+}
+.marketing-page h1,
+.marketing-page h2 {
+  color: black;
+}
+.marketing-page h3,
+.marketing-page h4 {
+  color: #A9A9A9;
+}
