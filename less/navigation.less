@@ -3,9 +3,6 @@
 }
 
 .navigation {
-    margin-left: 22%;
-    margin-right: 22%;
-
     @media @tablet {
         margin-left: 0%;
         margin-right: 0%;
@@ -16,15 +13,16 @@
         margin-right: 0%;
     }
 
-
     #title {
         float:left;
+        margin-left: 4rem;
 
         @media @tablet {
             display: flex;
             min-width: 100%;
             justify-content: center;
             margin-top: 2rem;
+            margin-left: 0;
         }
 
         @media @mobile {
@@ -32,6 +30,8 @@
             min-width: 100%;
             justify-content: center;
             margin-top: 2rem;
+            margin-left: 0;
+            text-align: center;
         }
     }
 
@@ -40,17 +40,18 @@
         justify-content: flex-end;
         margin: 2rem;
         margin-top: 3rem;
+        text-align: center;
         
         @media @tablet {
             width: 100%;
             margin: 0;
-            justify-content: space-around;
+            justify-content: space-evenly;
         }     
 
         @media @mobile {
             width: 100%;
             margin: 0;
-            justify-content: space-around;
+            justify-content: space-evenly;
         }     
 
         a {
@@ -58,14 +59,20 @@
             background-color: orchid;
             border: .3rem solid @navigation-border;
             border-radius: 1.5rem;
+            margin-left: 2rem;
+            margin-right: 2rem;
             margin-bottom: 2rem;
             color: @shark;
             font-size: 2rem;
+            display: flex;
+            align-items: space-around;
             padding: 1rem;
-
-            a:hover {
-                background-color: @hover-color;
-            }
         }  
+
+        a:hover {
+            background-color: @hover-color;
+        }
+
+       
     }
 }
