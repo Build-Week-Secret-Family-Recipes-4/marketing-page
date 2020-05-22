@@ -8,7 +8,8 @@ h2 {
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   font-family: 'Tajawal', sans-serif;
 }
 h1 {
@@ -23,8 +24,24 @@ h3 {
 h4 {
   font-size: 1.6rem;
 }
+p {
+  font-size: 2.2rem;
+}
 .container-nav {
-  border-bottom: 2px dashed #A9A9A9;
+  border-top: 0.2rem solid purple;
+}
+.container-nav .image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container-nav img {
+  position: absolute;
+  z-index: 0;
+  width: 100vw;
+  height: 25rem;
+  border-bottom: 0.4rem solid purple;
 }
 @media (max-width: 800px) {
   .navigation {
@@ -39,8 +56,11 @@ h4 {
   }
 }
 .navigation #title {
-  float: left;
   margin-left: 4rem;
+  color: white;
+  font-weight: bolder;
+  position: relative;
+  z-index: 1;
 }
 @media (max-width: 800px) {
   .navigation #title {
@@ -64,9 +84,10 @@ h4 {
 .navigation .navbar {
   display: flex;
   justify-content: flex-end;
-  margin: 2rem;
-  margin-top: 3rem;
   text-align: center;
+  background-color: #9932CC;
+  position: relative;
+  z-index: 1;
 }
 @media (max-width: 800px) {
   .navigation .navbar {
@@ -84,61 +105,46 @@ h4 {
 }
 .navigation .navbar a {
   text-decoration: none;
-  background-color: orchid;
-  border: 0.3rem solid #A9A9A9;
   border-radius: 1.5rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  margin-bottom: 2rem;
-  color: black;
+  margin: 0.5rem;
+  color: #FFFFFF;
   font-size: 2rem;
   display: flex;
   align-items: space-around;
   padding: 1rem;
+  background-color: #9932CC;
 }
 .navigation .navbar a:hover {
-  background-color: #7B68EE;
+  text-decoration: underline overline;
 }
 .footer {
   width: 100%;
-  border-top: 2px dashed silver;
-  background: #1E90FF;
+  background: #9932CC;
+  border-top: 0.4rem solid purple;
+  border-bottom: 0.4rem solid purple;
 }
 .footer p {
-  color: black;
+  color: #FFFFFF;
   text-align: center;
   font-size: 1.6rem;
   padding: 20px;
 }
-.marketing-page h1,
-.marketing-page h2 {
-  color: black;
+.introduction {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
-.marketing-page h3,
-.marketing-page h4 {
-  color: #A9A9A9;
-}
-.marketing-page h2 {
+.introduction .title {
   text-align: center;
 }
-.introduction img {
-  width: 30vw;
-  height: 40vh;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-bottom: 3%;
-  border: 0.7rem solid gray;
-}
-.container-dashboard img {
-  width: 90vw;
-  height: 40vh;
-  margin-left: 5%;
-  margin-right: 5%;
-  border: 0.7rem solid gray;
-}
-.introduction h2 {
+.introduction #intro {
+  background-color: lavender;
+  margin: 2rem;
+  padding: 2rem;
+  border: 0.2rem solid purple;
+  border-radius: 1.5rem;
   text-align: center;
 }
-.text-content h3 {
-  margin-top: 3rem;
+.introduction #intro #sfrc {
+  font-weight: bolder;
+  color: purple;
 }
