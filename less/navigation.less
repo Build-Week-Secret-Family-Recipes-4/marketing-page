@@ -12,82 +12,84 @@
         position: absolute;
         z-index: 0;
         width: 100vw;
-        height: 25rem;
+        height: 30rem;
         border-bottom: .4rem solid purple;
+        background-position: center;
+        background-size: cover;
+
+        @media @tablet {
+            height: 30rem;
+        }
+
+        @media @desktop {
+            height: 25rem;
+        }
     }
+
 }
 
 .navigation {
-    
-    @media @tablet {
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-
-    @media @mobile {
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-
     #title {
-        margin-left: 4rem;
         color: white;
         font-weight: bolder;
         position: relative;
         z-index: 1;
-
-        @media @tablet {
-            display: flex;
-            min-width: 100%;
-            justify-content: center;
-            margin-top: 2rem;
-            margin-left: 0;
-        }
-
-        @media @mobile {
-            display: flex;
-            min-width: 100%;
-            justify-content: center;
-            margin-top: 2rem;
-            margin-left: 0;
-            text-align: center;
-        }
+        text-align: center;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
     }
 
     .navbar {
         display: flex;
-        justify-content: flex-end;
+        flex-direction: column;
         text-align: center;
-        background-color: @bg;
         position: relative;
         z-index: 1;
         
         @media @tablet {
-            width: 100%;
-            margin: 0;
             justify-content: space-evenly;
         }     
 
-        @media @mobile {
-            width: 100%;
-            margin: 0;
-            justify-content: space-evenly;
+        @media @desktop {
+            background-color: @bg;
+            min-width: 20vw;
+            flex-direction: row;
+            align-items: flex-end;
         }     
 
         a {
             text-decoration: none;
             border-radius: 1.5rem;
+            border: .3rem solid purple;
             margin: .5rem;
+            margin-left: 0;
+            margin-right: 0;
             color: @white;
             font-size: 2rem;
             display: flex;
-            align-items: space-around;
+            flex-direction: column;
             padding: 1rem;
             background-color: @bg;
+            min-width: 85vw;
+
+            @media @desktop {
+                border: none;
+                text-align: center;
+                flex-direction: row;
+                justify-content: space-evenly;
+                min-width: 50vw;
+            } 
         }  
 
         a:hover {
+            background-color: purple;
+            border: .3rem solid @orchid;
+
+            @media @desktop {
             text-decoration: underline overline;
+            border: none;
+            background-color: @orchid;
+            }
         }
     }
 }

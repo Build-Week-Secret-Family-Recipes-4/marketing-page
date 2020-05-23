@@ -2,11 +2,12 @@
     padding-top: 2rem;
     padding-bottom: 2rem;
 
-    .title {
+    .titles {
         text-align: center;
+        margin-top: 3rem;
     }
 
-    #intro {
+    #intro{
         background-color: lavender;
         margin: 2rem;
         padding: 2rem;
@@ -19,5 +20,78 @@
         color: purple;
         }
     }
+    
+    p {
+        background-color: lavender;
+        margin: 2rem;
+        padding: 2rem;
+        border: .2rem solid purple;
+        border-radius: 1.5rem;
+        text-align: center;
+    }
+
+    .features {
+        list-style-type: disc;
+
+        li {
+            max-width: 80vw;
+            margin-left: 2vw;
+
+            @media @tablet {
+                margin-left: 5vw;
+            }
+
+            @media @desktop {
+                margin-left: 6vw;
+            }
+        }
+    }
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+
+        @media @tablet {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 95%;
+            height: 30vw;
+        }
+    }
 }
+
+.mission {
+    @media @desktop {
+        display: flex; 
+        flex-direction: row;
+    }
+
+    img {
+        @media @desktop {
+            width: 50%;
+        }
+    }
+
+    .ourMission {
+        @media @desktop {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        h2 {
+            @media @desktop {
+                min-width: 100%;
+            }
+        }
+    }
+}
+
+
+
+
+
 
