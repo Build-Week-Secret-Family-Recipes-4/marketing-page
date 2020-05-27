@@ -1,0 +1,62 @@
+.about {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    #title {
+        margin-top: 6rem;
+        text-align: center;
+    }
+    
+    .angelica, .april, .kim, .taylor {
+        background-color: lavender;
+        margin: 2rem;
+        border: .2rem solid purple;
+        border-radius: 1.5rem;
+        text-align: center;
+        min-height: 29rem;
+
+        @media @desktop {
+            width: 40vw;
+        }
+
+        img {
+            width: 25rem;
+            height: 25rem;
+            margin: 2rem;
+            float: left;
+
+            @media @desktop {
+                float: none;
+                margin-top: 2rem;
+            }
+        }
+    }
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 8rem;
+    margin-left: 2rem;
+
+    @media @desktop {
+        width: 40vw;
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+
+    .angelica, .april, .kim, .taylor { 
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+.team {
+    @media @desktop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+    }
+}

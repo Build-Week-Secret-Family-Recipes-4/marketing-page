@@ -26,10 +26,10 @@ h4 {
   font-size: 1.6rem;
 }
 p {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
 }
 li {
-  font-size: 1.9rem;
+  font-size: 2.1rem;
 }
 .container-nav {
   border-top: 0.2rem solid purple;
@@ -163,6 +163,9 @@ li {
   border-radius: 1.5rem;
   text-align: center;
 }
+.introduction #Grandma {
+  margin-top: 2rem;
+}
 .introduction .features {
   list-style-type: disc;
 }
@@ -195,26 +198,129 @@ li {
     height: 30vw;
   }
 }
-@media (min-width:1000px) {
-  .mission {
-    display: flex;
-    flex-direction: row;
-  }
+.mission {
+  margin-top: 4rem;
+}
+.mission img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
 }
 @media (min-width:1000px) {
   .mission img {
-    width: 50%;
+    width: 65%;
   }
 }
+.mission h2 {
+  font-size: 4rem;
+}
 @media (min-width:1000px) {
-  .mission .ourMission {
+  .cookBook {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    width: 100vw;
+  }
+}
+.cookBook img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+}
+@media (min-width:1000px) {
+  .cookBook img {
+    order: 2;
+    width: 65%;
   }
 }
 @media (min-width:1000px) {
-  .mission .ourMission h2 {
-    min-width: 100%;
+  .cookBook h2 {
+    margin-top: 0;
+    order: 1;
+  }
+}
+@media (min-width:1000px) {
+  .cookBook p {
+    order: 3;
+  }
+}
+@media (min-width:1000px) {
+  .cookBook .features {
+    order: 4;
+  }
+}
+.about {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.about #title {
+  margin-top: 6rem;
+  text-align: center;
+}
+.about .angelica,
+.about .april,
+.about .kim,
+.about .taylor {
+  background-color: lavender;
+  margin: 2rem;
+  border: 0.2rem solid purple;
+  border-radius: 1.5rem;
+  text-align: center;
+  min-height: 29rem;
+}
+@media (min-width:1000px) {
+  .about .angelica,
+  .about .april,
+  .about .kim,
+  .about .taylor {
+    width: 40vw;
+  }
+}
+.about .angelica img,
+.about .april img,
+.about .kim img,
+.about .taylor img {
+  width: 25rem;
+  height: 25rem;
+  margin: 2rem;
+  float: left;
+}
+@media (min-width:1000px) {
+  .about .angelica img,
+  .about .april img,
+  .about .kim img,
+  .about .taylor img {
+    float: none;
+    margin-top: 2rem;
+  }
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 8rem;
+  margin-left: 2rem;
+}
+@media (min-width:1000px) {
+  .info {
+    width: 40vw;
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+}
+.info .angelica,
+.info .april,
+.info .kim,
+.info .taylor {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+@media (min-width:1000px) {
+  .team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }

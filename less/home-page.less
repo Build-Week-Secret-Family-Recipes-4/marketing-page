@@ -30,6 +30,10 @@
         text-align: center;
     }
 
+    #Grandma {
+        margin-top: 2rem;
+    }
+
     .features {
         list-style-type: disc;
 
@@ -64,34 +68,55 @@
 }
 
 .mission {
-    @media @desktop {
-        display: flex; 
-        flex-direction: row;
-    }
+    margin-top: 4rem;
 
     img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+
         @media @desktop {
-            width: 50%;
+            width: 65%;
         }
     }
 
-    .ourMission {
-        @media @desktop {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-        }
-
-        h2 {
-            @media @desktop {
-                min-width: 100%;
-            }
-        }
+    h2 {
+        font-size: 4rem;
     }
 }
 
+.cookBook {
+    @media @desktop{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
 
-
-
-
-
+        @media @desktop {
+            order: 2;
+            width: 65%;
+        }
+    }
+    h2 {
+        @media @desktop {
+            margin-top: 0;
+            order: 1;
+        }
+    }
+    p {
+        @media @desktop {
+            order: 3;
+        }
+    }
+    .features {
+        @media @desktop {
+            order: 4;
+        }
+    }
+}
