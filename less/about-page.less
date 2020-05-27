@@ -8,10 +8,7 @@
     }
     
     .angelica, .april, .kim, .taylor {
-        background-color: lavender;
-        margin: 2rem;
-        border: .2rem solid purple;
-        border-radius: 1.5rem;
+        .border (2rem, .2rem solid purple, 1.5rem, lavender);
         text-align: center;
         min-height: 29rem;
 
@@ -34,9 +31,7 @@
 }
 
 .info {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    .imageFlex(column, wrap);
     margin-top: 8rem;
     margin-left: 2rem;
 
@@ -47,16 +42,14 @@
     }
 
     .angelica, .april, .kim, .taylor { 
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+        .imageFlex(column, wrap);
     }
 }
 
 .team {
     @media @desktop {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;    
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;    
     }
 }

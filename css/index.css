@@ -144,11 +144,11 @@ li {
   margin-top: 3rem;
 }
 .introduction #intro {
-  background-color: lavender;
-  margin: 2rem;
   padding: 2rem;
+  margin: 2rem;
   border: 0.2rem solid purple;
   border-radius: 1.5rem;
+  background-color: lavender;
   text-align: center;
 }
 .introduction #intro #sfrc {
@@ -156,11 +156,11 @@ li {
   color: purple;
 }
 .introduction p {
-  background-color: lavender;
-  margin: 2rem;
   padding: 2rem;
+  margin: 2rem;
   border: 0.2rem solid purple;
   border-radius: 1.5rem;
+  background-color: lavender;
   text-align: center;
 }
 .introduction #Grandma {
@@ -262,10 +262,10 @@ li {
 .about .april,
 .about .kim,
 .about .taylor {
-  background-color: lavender;
   margin: 2rem;
   border: 0.2rem solid purple;
   border-radius: 1.5rem;
+  background-color: lavender;
   text-align: center;
   min-height: 29rem;
 }
