@@ -163,6 +163,24 @@ li {
   background-color: lavender;
   text-align: center;
 }
+.introduction button {
+  margin: 0;
+  border: 0.3rem solid purple;
+  border-radius: 1.5rem;
+  background-color: lavender;
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.7rem;
+  font-weight: bolder;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  width: 25%;
+}
+.introduction button a {
+  text-decoration: none;
+}
 .introduction #Grandma {
   margin-top: 2rem;
 }
