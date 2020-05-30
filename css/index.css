@@ -176,7 +176,17 @@ li {
   margin-left: auto;
   margin-right: auto;
   width: 95%;
-  width: 25%;
+  width: 50%;
+}
+@media (min-width: 800px) {
+  .introduction button {
+    width: 25%;
+  }
+}
+@media (min-width:1000px) {
+  .introduction button {
+    width: 25%;
+  }
 }
 .introduction button a {
   text-decoration: none;
